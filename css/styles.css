@@ -1,0 +1,238 @@
+.markitem{
+
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    grid-template-rows: 1fr 1fr;
+    background-color: rgba(35, 127, 164, 1);
+
+    height: 4rem;
+    width: 100%;
+    padding: 0 4px 0 4px;
+    border-top: 1px solid white;
+    
+}
+
+.markitem p{
+    margin-bottom: 0;
+    font-size: 0.875rem;
+}
+.botones{
+
+    width: 60px;
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;  
+}
+
+.as{
+
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.as:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+/*.as img{
+    height: 20px;
+    width: 20px;
+}*/
+
+.imgedit{
+    height: 18px;
+    width: 18px;
+}
+
+.imgborrar{
+    height: 20px;
+    width: 20px;
+}
+
+.marknombre{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+}
+
+.markcoord{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    align-items: center;
+
+}
+
+#marker-menu{
+
+    font-family: 'Roboto', sans-serif;
+    background-color:  rgba(35, 127, 164, 1);
+    color: white;
+    padding: 0;
+    height: 3.2rem;
+    z-index: 9988;
+    
+}
+
+.marker-h{
+    height: 3.2rem;
+    width: 100%;    
+}
+
+.marker-h:hover{
+    background-color: rgba(0 ,76,113,1);
+}
+
+/*.marker-options*/
+
+.marker-slide{
+    background-color: rgba(35, 127, 164, 1);
+    overflow: visible;
+}
+
+.marker-opt div{
+    width: 100%;
+    height: 3.2em;
+}
+
+.marker-opt div:hover{
+    background-color: rgba(0,76,113,1);
+}
+
+.menu-text{
+    margin-bottom: 0;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mapa{
+
+    width: 100%;
+    height: 800px;
+    
+}
+
+.mapawrapper{
+
+   /*margin-top: 400px;*/
+   margin-bottom: 500px;
+   
+}
+
+  
+/*#map-form{*/
+#form-wrapper{    
+
+   /*height: 750px;*/
+    width: 380px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    z-index: 2000;
+    background-color: rgba(222, 218, 226, 1);
+    border-radius: 1.5%;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid grey;
+    cursor: grab;
+
+}
+
+.mark-title{
+
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+
+}
+
+/*.campo{
+
+    margin-bottom: 0.8rem;
+
+}*/
+
+.popUpWrapper{
+
+    /*padding: 0;*/
+    width: 210px;
+    /*height: 140px;*/
+    
+}
+
+.popUpWrapper *{
+    
+    border-radius: 0;
+   /* margin-bottom: 0;*/
+
+}
+
+.etiqueta{
+
+    height: 125px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid rgba(30, 126, 194, 1);
+    width: 210px; 
+    z-index: 2000;     
+    background-color: rgba(222, 218, 226, 1);
+    overflow: visible;
+    
+}
+
+.etiqueta-texto{
+
+    overflow: hidden;
+    line-height: 1.4;
+    height: 100%;
+    padding: 7px;
+
+}
+
+.etiqueta p{
+
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    
+}
+
+.etiqueta b{
+
+    font-weight: 700;
+
+}
+
+.flecha{
+
+    background: rgba(222, 218, 226, 1);
+    border-right: 1px solid rgba(30, 126, 194, 1);
+    border-bottom: 1px solid rgba(30, 126, 194, 1);
+    width: 17px;
+    height: 17px;
+    z-index: 750;
+    margin: -8px auto 0px;    
+    transform: rotate(45deg);
+
+}
+
+.sw-dv{
+    margin-bottom: 1rem;
+}
+
+.sw-mk{
+    font-size: 0.875em;
+    line-height: 1.75;
+}

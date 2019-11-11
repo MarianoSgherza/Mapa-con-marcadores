@@ -1,0 +1,16 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <title/>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#0f0f00" stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" fill="none" id="svg_1" d="m50.399336,14l-36.399336,0l3.761265,38.3a4.044371,4 0 0 0 4.044371,3.7l20.798176,0a4.044371,4 0 0 0 4.044371,-3.7l3.751154,-38.3z" class="cls-1"/>
+  <line stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" stroke="#0f0f00" fill="none" id="svg_2" y2="18.97" y1="55.33" x2="38.11" x1="37.05" class="cls-1"/>
+  <line stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" fill="none" id="svg_3" y2="55.33" y1="18.97" x2="26.95" x1="25.89" class="cls-1"/>
+  <line stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" fill="none" id="svg_4" y2="14" y1="14" x2="54" x1="10" class="cls-1"/>
+  <polyline stroke-width="2px" stroke-linejoin="round" stroke-linecap="round" stroke="#0f0f00" fill="none" id="svg_5" points="24 14 26 8 38 8 40 14" class="cls-1"/>
+ </g>
+</svg>

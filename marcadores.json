@@ -1,0 +1,59 @@
+{
+    "marcadores": [
+        {
+            "id": 1,
+            "name": "Primero SA",
+            "address": "Av.primera 123",
+            "tel": "123",
+            "categoria": "residencial",
+            "coordenadas": {
+                "latitud": "-34.60563246",
+                "longitud": "-58.28215199"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Sexto SA",
+            "address": "Av. Sexta 666",
+            "tel": "6666655555555555555",
+            "categoria": "residencial",
+            "coordenadas": {
+                "latitud": "-34.58726258",
+                "longitud": "-58.39526836"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Septima SA",
+            "address": "Av. Septima 777",
+            "tel": "7777",
+            "categoria": "comercial",
+            "coordenadas": {
+                "latitud": "-34.57454259",
+                "longitud": "-58.45139743"
+            }
+        },
+        {
+            "id": 11,
+            "name": "Undecima SA",
+            "address": "Av. Undecima 1111",
+            "tel": "1231111",
+            "categoria": "mixta",
+            "coordenadas": {
+                "latitud": "-34.60563246",
+                "longitud": "-59"
+            }
+        },
+        {
+            "id": 15,
+            "name": "Decimoquinto SA",
+            "address": "Av. Quince 1515",
+            "tel": "151-5151",
+            "categoria": "residencial",
+            "coordenadas": {
+                "latitud": "-34.6208905",
+                "longitud": "-58.3967562"
+            }
+        }
+    ]
+}
