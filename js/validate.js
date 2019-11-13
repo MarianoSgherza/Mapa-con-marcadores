@@ -14,8 +14,8 @@ $(document).ready(function () {
     var caterror = document.getElementById("categoria-error");
     var coorderror = document.getElementById("coordenadas-error");
     
-    var regexName = /^[A-Za-z0-9\s\.\-\_\']+$/;
-    var regexAddress = /^([A-Za-z0-9\s]+\.?)+$/;
+    var regexName = /^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s\.\-\_\']+$/;
+    var regexAddress = /^([A-Za-zÀ-ÖØ-öø-ÿ0-9\s]+\.?)+$/;
     var regexTel = /^([0-9\s]+)(([\-])?([0-9\s]+)*)$/;
     var regexCoord = /^(\s*)(-?)(\d{1,3})+((\.)(\d{0,8}))?(\s*)(\,)(\s*)(-?)(\d)+((\.)(\d{0,8}))?(\s*)$/;
     var hayErrores = false;
@@ -91,7 +91,7 @@ $(document).ready(function () {
         hayErrores = false;
 
         if (regexTel.test(b.tel.value)==false) {
-            telerror.innerHTML = 'Caracteres alfanuméricos y espacios';
+            telerror.innerHTML = 'Formato telefónico';
             hayErrores = true;
         }
 
@@ -179,9 +179,6 @@ $(document).ready(function () {
         return hayErrores;
 
     }
-
-
-
     
     a.addEventListener ("submit", function (event) {
    

@@ -35,7 +35,7 @@ if (!empty($_POST)&&empty($_POST["delete"])) {
         $errores["name"] = "Hasta 20 caracteres";
       }
     
-    if (!preg_match("/^[A-Za-z0-9\s\.\-\_\']+$/", $_POST["name"])) {
+    if (!preg_match("/^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s\.\-\_\']+$/", $_POST["name"])) {
         $errores["name"]= "Sólo se permiten caracteres alfanuméricos y espacios";
     }
 
@@ -62,7 +62,7 @@ if (!empty($_POST)&&empty($_POST["delete"])) {
       $errores["address"] = "Hasta 25 caracteres";
     }
 
-    if (!preg_match("/^([A-Za-z0-9\s]+\.?)+$/", $_POST["address"])) {
+    if (!preg_match("/^([A-Za-zÀ-ÖØ-öø-ÿ0-9\s]+\.?)+$/", $_POST["address"])) {
         $errores["address"]= "Sólo se permiten caracteres alfanuméricos y espacios";
     }
 
@@ -79,10 +79,10 @@ if (!empty($_POST)&&empty($_POST["delete"])) {
     }
 
     if (!preg_match("/^([0-9\s]+)(([\-])?([0-9\s]+)*)+$/", $_POST["tel"])) {
-        $errores["tel"]= "Sólo se permiten caracteres alfanuméricos y espacios";
+        $errores["tel"]= "Sólo se permite formato telefónico";
     }
 
-    if (strlen($_POST["address"])>19) {
+    if (strlen($_POST["address"])>20) {
         $errores["address"] = "Hasta 20 caracteres";
     }
   
@@ -125,18 +125,9 @@ if (!empty($_POST)&&empty($_POST["delete"])) {
                 $errores["coordenadas"] = "La longitud debe estar entre -180 y 180";
             }
         }
+
         }
         
-
-    
-
-       /* if (comprobarCoordenadas($latitud, $longitud)) {
-        
-            $errores["coordenadas"]='Ya existe un marcador con estas coordenadas';
-
-        }*/
-        
-      //  comprobarCoordenadas($latitud, $longitud);
 
     if (empty($_POST["edito"])) {
           
@@ -168,10 +159,6 @@ if (!empty($_POST)&&empty($_POST["delete"])) {
 
 
     if (empty($errores['coordenadas'])) {
-        /*$h='';
-        $h=filter_var($_POST['coordenadas'], FILTER_SANITIZE_STRING);
-        $n=trim($h);
-        $marcador["coordenadas"]=$n;*/
         
         $latitud=filter_var($latitud, FILTER_SANITIZE_STRING);
         $latitud=trim($latitud);
@@ -179,9 +166,7 @@ if (!empty($_POST)&&empty($_POST["delete"])) {
 
         $longitud=filter_var($longitud, FILTER_SANITIZE_STRING);
         $longitud=trim($longitud);
-        $marcador["coordenadas"]["longitud"] = $longitud;
-
-        
+        $marcador["coordenadas"]["longitud"] = $longitud;    
     
     }
 

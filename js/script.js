@@ -151,8 +151,7 @@ $(document).ready(function () {
       botones.setAttribute("id", botonesid);
       var itemid = "item_" + i;
       node.setAttribute("id", itemid);
-      /*var tooltip = document.createElement("span");
-      var ttext = ""*/
+
       $("#edit_"+i).click(function () {
 
         $("#form-wrapper").show();
@@ -235,6 +234,7 @@ $(document).ready(function () {
       console.log(info.marcadores[0].name);
      
     }}
+    
   pedidoJson.open("POST", "marcadores.json", true);
   
   pedidoJson.send();
@@ -290,19 +290,26 @@ $(document).ready(function () {
     f.coordenadas.value = "";
     var r = document.querySelectorAll(".campo");
     var s = r.length;
+
     for(let i = 0; i<s;i++){
+
       if(r[i].classList.contains("is-invalid")){
+
         r[i].classList.remove("is-invalid");
+
       }
+
       if(r[i].classList.contains("is-valid")){
+
         r[i].classList.remove("is-valid");
+
       }
     
     }
       
   });
 
-  //agregar.addEventListener
+  
   
   var editores = document.querySelectorAll(".editicon");
   editores.forEach(element => {
@@ -329,7 +336,7 @@ $(document).ready(function () {
       
 
     }
-    //var store = $("#map-form").serialize();
+    
     
     $.ajax({                        
        type: "POST",                 
@@ -382,15 +389,17 @@ $(document).ready(function () {
   });
 
 
-  var agregarsbt = document.getElementById("agr-btn");
   var corderror = document.getElementById("coordenadas-error");
-
 
   if (corderror.innerHTML.length>0) {
     formc.style.display = 'block';
   }
-    
 
-  
+  document.getElementById("close-form").addEventListener("click", function () {
+    formc.style.display = "none";
+  })
+
+
+
     
 });

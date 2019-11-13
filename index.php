@@ -54,7 +54,15 @@
         <div id="form-wrapper" class="mr-3 mt-2" style="display: none;">
         <form action="index.php" method="post" id="map-form" class="py-3 px-3" novalidate>
 
-            <h2 id="form-title" class="mark-title">Agregar marcador</h2>
+            <div class="row form-h">
+
+                
+                <h2 id="form-title" class="col-10 mark-title">Agregar marcador</h2>
+                
+                <div class="closing">
+                    <img id="close-form" src="images\closing-icon.svg" alt="Cerrar">
+                </div>
+            </div>
 
             <div class="form-group row">
                 <label for="name" class="col-3 col-form-label col-form-label-sm tag">Nombre</label>

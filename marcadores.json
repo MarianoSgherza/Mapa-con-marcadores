@@ -12,17 +12,6 @@
             }
         },
         {
-            "id": 6,
-            "name": "Sexto SA",
-            "address": "Av. Sexta 666",
-            "tel": "6666655555555555555",
-            "categoria": "residencial",
-            "coordenadas": {
-                "latitud": "-34.58726258",
-                "longitud": "-58.39526836"
-            }
-        },
-        {
             "id": 7,
             "name": "Septima SA",
             "address": "Av. Septima 777",
